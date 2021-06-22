@@ -32,6 +32,12 @@ setup(
         "tests": ["tox", "flake8"],
         "production": ["hypercorn", "uvloop", "httptools"],
     },
+    entry_points={
+        "console_scripts": [
+            "coolapi_configure_db=coolapi.database.models:configure_database",
+            "coolapi_populate_db=coolapi.database.populate:populate",
+        ]
+    },
     project_urls={
         "Bug Reports": "https://github.com/SocgenGoToCloud/CoolApp/issues",
         "Source": "https://github.com/SocgenGoToCloud/CoolApp",

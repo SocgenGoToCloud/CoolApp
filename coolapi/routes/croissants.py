@@ -2,7 +2,7 @@ from typing import List
 
 from fastapi.routing import APIRouter
 
-from coolapi.models import CroissantRequest
+from coolapi.models.croissants import CroissantRequest
 
 router = APIRouter()
 
