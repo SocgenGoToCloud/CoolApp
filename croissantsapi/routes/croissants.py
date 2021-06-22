@@ -2,12 +2,12 @@ from typing import List
 
 from fastapi.routing import APIRouter
 
-from coolapi.models.croissants import (
+from croissantsapi.models.croissants import (
     CroissantRequests,
     CroissantRequest,
     NewCroissantRequest,
 )
-import coolapi.services.croissants as croissants_service
+import croissantsapi.services.croissants as croissants_service
 
 router = APIRouter()
 

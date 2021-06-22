@@ -1,2 +1,2 @@
-# CoolApp
-The best app of the world
+# Croissants API
+The best API of the world

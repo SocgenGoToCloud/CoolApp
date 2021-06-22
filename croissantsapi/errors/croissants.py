@@ -1,4 +1,4 @@
-from coolapi.errors import ApiException
+from croissantsapi.errors import ApiException
 
 
 class UnknownCroissantRequest(ApiException):

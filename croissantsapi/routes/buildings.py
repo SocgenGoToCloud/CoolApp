@@ -1,10 +1,10 @@
-from coolapi.models.croissants import CroissantRequest
+from croissantsapi.models.croissants import CroissantRequest
 from typing import List
 
 from fastapi.routing import APIRouter
 
-from coolapi.models.buildings import BuildingList, Building
-import coolapi.services.buildings as buildings_service
+from croissantsapi.models.buildings import BuildingList, Building
+import croissantsapi.services.buildings as buildings_service
 
 router = APIRouter()
 

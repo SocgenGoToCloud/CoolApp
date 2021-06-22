@@ -1,5 +1,5 @@
-from coolapi.database.connector import ENGINE
-from coolapi.database.models import Buildings
+from croissantsapi.database.connector import ENGINE
+from croissantsapi.database.models import Buildings
 
 BUILDINGS = [
     Buildings(id="alicante", name="Alicante", max_floors=37),

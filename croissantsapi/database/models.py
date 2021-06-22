@@ -2,7 +2,7 @@ from sqlalchemy import Column, String, Integer, ForeignKey, DateTime
 from sqlalchemy.ext.declarative import declarative_base
 
 
-from coolapi.database.connector import ENGINE
+from croissantsapi.database.connector import ENGINE
 
 
 Base = declarative_base()
@@ -26,5 +26,5 @@ class CroissantsRequests(Base):
 
 
 def configure_database():
-    print("Configuring CoolAPI DB")
+    print("Configuring CroissantsAPI DB")
     Base.metadata.create_all(ENGINE.engine)

@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from coolapi.routes.buildings import router as buildings_router
-from coolapi.routes.croissants import router as croissants_router
+from croissantsapi.routes.buildings import router as buildings_router
+from croissantsapi.routes.croissants import router as croissants_router
 
 app = FastAPI()
 

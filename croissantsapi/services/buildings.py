@@ -1,9 +1,9 @@
 from typing import List
 
-from coolapi.database.connector import ENGINE
-import coolapi.database.models as db_models
-from coolapi.errors.buildings import UnknownBuilding
-from coolapi.models.buildings import Building
+from croissantsapi.database.connector import ENGINE
+import croissantsapi.database.models as db_models
+from croissantsapi.errors.buildings import UnknownBuilding
+from croissantsapi.models.buildings import Building
 
 
 def _building_from_db(building: db_models.Buildings) -> Building:

@@ -1,12 +1,12 @@
 from datetime import time
 from typing import List
 
-from coolapi.database.connector import ENGINE
-import coolapi.database.models as db_models
-from coolapi.errors.buildings import UnknownBuilding, BuildingFloorOverflow
-from coolapi.errors.croissants import UnknownCroissantRequest
-from coolapi.models.buildings import DeliveryLocation
-from coolapi.models.croissants import CroissantRequest, NewCroissantRequest
+from croissantsapi.database.connector import ENGINE
+import croissantsapi.database.models as db_models
+from croissantsapi.errors.buildings import UnknownBuilding, BuildingFloorOverflow
+from croissantsapi.errors.croissants import UnknownCroissantRequest
+from croissantsapi.models.buildings import DeliveryLocation
+from croissantsapi.models.croissants import CroissantRequest, NewCroissantRequest
 
 
 def _croissant_from_db(croissant: db_models.CroissantsRequests) -> CroissantRequest:

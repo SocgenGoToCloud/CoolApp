@@ -3,7 +3,7 @@ from typing import List
 
 from pydantic import BaseModel
 
-from coolapi.models.buildings import DeliveryLocation
+from croissantsapi.models.buildings import DeliveryLocation
 
 
 class CroissantRequest(BaseModel):
