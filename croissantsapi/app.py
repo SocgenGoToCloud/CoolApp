@@ -4,7 +4,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from croissantsapi.routes.buildings import router as buildings_router
 from croissantsapi.routes.croissants import router as croissants_router
 
-app = FastAPI()
+app = FastAPI(
+    title="CroissantsAPI", version="0.1.0", description="The coolest API in the world"
+)
 
 app.add_middleware(
     CORSMiddleware,
