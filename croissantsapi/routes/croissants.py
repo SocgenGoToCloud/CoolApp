@@ -17,7 +17,7 @@ def list_croissant_requests():
     return CroissantRequests(requests=croissants_service.get_all_croissant_requests())
 
 
-@router.get("/{id}", response_model=CroissantRequests)
+@router.get("/{id}", response_model=CroissantRequest)
 def get_croissant_request(id: int):
     return croissants_service.get_croissant_request(id)
 
